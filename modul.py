@@ -72,7 +72,7 @@ class Transaction:
               self.reset_order()
               print("\n")
           elif edit_order.lower() == "total_belanja":
-              self.total_price()
+              self.total_belanja()
               print("\n")
           elif edit_order.lower() == "exit":
               # break
@@ -307,7 +307,7 @@ class Transaction:
           else:
               print("Nama item tidak terdaftar")
 
-    def reset_transaction(self):
+    def reset_order(self):
       """
       Sebuah fungsi untuk menghapus seluruh item yang berhasil diinput oleh customer pada transaksi
       Parameters
